@@ -200,8 +200,9 @@
               </svg>
             </button>
           </div>
+          <!--Caixa de pesquisa final-->
 
-          <!-- botão de add (modal) -->
+          <!-- botão de adicionar -->
           <button type="button" class="btn add-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -217,10 +218,185 @@
               />
             </svg>
           </button>
+
+          <!-- modal de cadastrar usuario -->
+
+          <!-- final do modal -->
+          <!-- final do botao de adicionar -->
         </div>
+        <!-- cards de usuarios inicio -->
+        <div class="usuarios-card">
+          <div class="card" style="width: 12rem; height: 15rem">
+            <div
+              class="user-image d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="./assets/main/Imagem.svg"
+                class="d-block mx-auto img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Nome do usuario</h5>
+              <div class="group d-flex justify-content-between">
+                <p class="card-text">funções</p>
+                <a href="#" class="btn">
+                  <img src="./assets/main/Editar.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 12rem; height: 15rem">
+            <div
+              class="user-image d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="./assets/main/Imagem.svg"
+                class="d-block mx-auto img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Nome do usuario</h5>
+              <div class="group d-flex justify-content-between">
+                <p class="card-text">funções</p>
+                <a href="#" class="btn">
+                  <img src="./assets/main/Editar.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 12rem; height: 15rem">
+            <div
+              class="user-image d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="./assets/main/Imagem.svg"
+                class="d-block mx-auto img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Nome do usuario</h5>
+              <div class="group d-flex justify-content-between">
+                <p class="card-text">funções</p>
+                <a href="#" class="btn">
+                  <img src="./assets/main/Editar.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 12rem; height: 15rem">
+            <div
+              class="user-image d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="./assets/main/Imagem.svg"
+                class="d-block mx-auto img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Nome do usuario</h5>
+              <div class="group d-flex justify-content-between">
+                <p class="card-text">funções</p>
+                <a href="#" class="btn">
+                  <img src="./assets/main/Editar.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 12rem; height: 15rem">
+            <div
+              class="user-image d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="./assets/main/Imagem.svg"
+                class="d-block mx-auto img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Nome do usuario</h5>
+              <div class="group d-flex justify-content-between">
+                <p class="card-text">funções</p>
+                <a href="#" class="btn">
+                  <img src="./assets/main/Editar.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 12rem; height: 15rem">
+            <div
+              class="user-image d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="./assets/main/Imagem.svg"
+                class="d-block mx-auto img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Nome do usuario</h5>
+              <div class="group d-flex justify-content-between">
+                <p class="card-text">funções</p>
+                <a href="#" class="btn">
+                  <img src="./assets/main/Editar.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 12rem; height: 15rem">
+            <div
+              class="user-image d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="./assets/main/Imagem.svg"
+                class="d-block mx-auto img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Nome do usuario</h5>
+              <div class="group d-flex justify-content-between">
+                <p class="card-text">funções</p>
+                <a href="#" class="btn">
+                  <img src="./assets/main/Editar.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 12rem; height: 15rem">
+            <div
+              class="user-image d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="./assets/main/Imagem.svg"
+                class="d-block mx-auto img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Nome do usuario</h5>
+              <div class="group d-flex justify-content-between">
+                <p class="card-text">funções</p>
+                <a href="#" class="btn">
+                  <img src="./assets/main/Editar.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cards de usuarios final -->
       </div>
     </main>
-    <!--Caixa de pesquisa final-->
 
     <!-- FOOTER -->
   </div>
@@ -287,7 +463,7 @@
   display: flex;
   flex-direction: column;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   height: 100vh;
   justify-content: space-between;
   left: 0;
@@ -379,7 +555,7 @@
   color: #fff;
   display: flex;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   gap: 1rem;
   height: 100%;
   line-height: 1.5rem;
@@ -412,6 +588,8 @@ main {
 .container {
   width: 62.3rem;
 }
+
+/* MAIN TOP */
 
 .main-top {
   display: flex;
@@ -501,5 +679,33 @@ main {
   background-color: #39a048;
   color: #fff;
   padding: 0.3rem 0.5rem;
+}
+
+/* CARDS */
+
+.usuarios-card {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 2rem;
+}
+
+.card {
+  border: 1.5px solid #9f9f9f;
+  border-radius: 0.5rem;
+}
+
+.user-image {
+  background-color: #9f9f9f20;
+  height: 40vh;
+}
+
+.card-img-top img {
+  height: 1rem;
+}
+
+.card-body {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
 }
 </style>
