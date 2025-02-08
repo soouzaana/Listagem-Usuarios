@@ -173,6 +173,54 @@
     </nav>
 
     <!-- CONTENT -->
+    <main>
+      <div class="container">
+        <div class="main-top">
+          <!--Caixa de pesquisa começo-->
+          <div class="form">
+            <input
+              type="text"
+              placeholder="Digite aqui"
+              id="input-id"
+              required
+            />
+            <label for="input-id" class="label">Pesquisar</label>
+            <button class="pesquisar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- botão de add (modal) -->
+          <button type="button" class="btn add-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              fill="currentColor"
+              class="bi bi-plus-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </main>
+    <!--Caixa de pesquisa final-->
 
     <!-- FOOTER -->
   </div>
@@ -243,7 +291,7 @@
   height: 100vh;
   justify-content: space-between;
   left: 0;
-  min-width: 5rem;
+  min-width: 4rem;
   overflow: hidden;
   position: fixed;
   top: 0rem;
@@ -264,7 +312,7 @@
   flex-direction: column;
   flex-grow: 1;
   list-style: none;
-  margin: 0.5rem;
+  margin: 0.3rem;
   padding: 0;
 }
 
@@ -296,7 +344,7 @@
   width: 100%;
 }
 
-.side-item img {
+.side-item .icone {
   margin-right: 1rem;
 }
 
@@ -316,10 +364,7 @@
 }
 
 .sidebar-content__bottom {
-  display: flex;
-  flex-direction: column;
-  margin: 0.5rem;
-  bottom: 10rem;
+  margin: 0.3rem;
 }
 
 #logout {
@@ -338,7 +383,7 @@
   gap: 1rem;
   height: 100%;
   line-height: 1.5rem;
-  padding: 1rem 1rem 1rem 0;
+  padding: 0.5rem 1rem 0.5rem 0;
   text-align: start;
   transition: background-color 0.3s, transform 0.3s;
   width: 100%;
@@ -352,6 +397,109 @@
   background-color: #e9001c;
 }
 #sidebar:hover + main {
-  padding-left: 25.7rem;
+  padding-left: 15rem;
+}
+
+/* CONTENT */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  transition: padding-left 0.5s;
+}
+
+.container {
+  width: 62.3rem;
+}
+
+.main-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  height: 3rem;
+  width: 31rem;
+  position: relative;
+}
+
+.form input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 0.5rem;
+  border: 1.5px solid #9f9f9f;
+  outline: none;
+  padding: 0 0.6rem;
+  font-size: 0.75rem;
+  padding-left: 1rem;
+}
+
+.form input:active,
+.form input:focus {
+  border-color: #1bba47;
+}
+
+.form label {
+  position: absolute;
+  left: 1rem;
+  text-transform: capitalize;
+  font-size: 0.75rem;
+  background-color: #fff;
+  color: #9f9f9f;
+  padding: 0 0.6rem;
+  font-weight: 600;
+}
+
+.form input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 0.5rem;
+  border: 1.5px solid #9f9f9f;
+  outline: none;
+  padding: 0 0.6rem;
+  font-size: 0.75rem;
+  padding-left: 1rem;
+}
+
+.form input:active,
+.form input:focus {
+  border-color: #1bba47;
+}
+
+.form label {
+  position: absolute;
+  top: -0.5rem;
+  left: 1rem;
+  text-transform: capitalize;
+  font-size: 0.75rem;
+  background-color: #fff;
+  color: #9f9f9f;
+  padding: 0 0.3rem;
+  font-weight: 600;
+}
+
+.form input:focus + .label,
+.form input:active + .label {
+  color: #1bba47;
+}
+
+.pesquisar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 3.1rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.add-button {
+  background-color: #39a048;
+  color: #fff;
+  padding: 0.3rem 0.5rem;
 }
 </style>
