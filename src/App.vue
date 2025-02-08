@@ -57,12 +57,14 @@
                 class="nav-link"
                 href="#"
                 role="button"
+                data-bs-container="body"
                 data-bs-toggle="dropdown"
+                data-bs-placement="left"
                 aria-expanded="false"
               >
                 <img src="./assets/navbar/Notificacao-Off.svg" alt="" />
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu notify">
                 <li>
                   <a class="dropdown-item border-bottom" href="#"
                     >Novo evento gerado.</a
@@ -203,7 +205,12 @@
           <!--Caixa de pesquisa final-->
 
           <!-- botão de adicionar -->
-          <button type="button" class="btn add-button">
+          <button
+            type="button"
+            class="btn add-button"
+            data-bs-toggle="modal"
+            data-bs-target="#cadastrar-usuario"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -220,7 +227,118 @@
           </button>
 
           <!-- modal de cadastrar usuario -->
+          <div class="user-modal">
+            <div
+              class="modal fade"
+              id="cadastrar-usuario"
+              tabindex="-1"
+              aria-labelledby="cadastrar-usuario__label"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title" id="cadastrar-usuario__label">
+                      Cadastrar Usuarios
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- CORPO DO MODAL -->
+                    <div class="inputs">
+                      <!--input de imagem início-->
+                      <label
+                        class="picture d-flex align-items-center justify-content-center"
+                        for="picture_input"
+                        tabindex="0"
+                      >
+                        <input
+                          type="file"
+                          accept="image/*"
+                          id="picture_input"
+                          class="d-none"
+                        />
+                        <img
+                          src="./assets/main/Imagem-Nova.svg"
+                          alt="imagemNova"
+                        />
+                        <span class="picure_image"
+                          >Arraste e solte uma imagem ou escolha uma de até 500
+                          KB .jpeg ou .png.</span
+                        >
+                      </label>
+                      <!--input de imagem final-->
 
+                      <!-- inputs de form inicio -->
+                      <div class="inserir">
+                        <input
+                          type="text"
+                          id="input-name"
+                          placeholder="Digite aqui"
+                          required
+                        />
+                        <label for="input-name" class="label">Nome</label>
+                      </div>
+
+                      <div class="inserir">
+                        <input
+                          type="email"
+                          id="input-email"
+                          placeholder="Digite aqui"
+                          required
+                        />
+                        <label for="input-name" class="label">Email</label>
+                      </div>
+
+                      <div class="inserir">
+                        <input
+                          type="number"
+                          id="input-matricula"
+                          placeholder="Digite aqui"
+                          required
+                        />
+                        <label for="input-name" class="label">Matricula</label>
+                      </div>
+                    </div>
+
+                    <div class="novoVinculo-add" onclick="addVinculo()">
+                      <span>Novo Vínculo</span>
+                    </div>
+
+                    <!-- 
+                    <div class="form-floating">
+                      <select
+                        class="form-select"
+                        id="floatingSelect"
+                        aria-label="Floating label select example"
+                      >
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <label for="floatingSelect">Works with selects</label>
+                    </div> -->
+
+                    <!-- inputs de form final -->
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">
+                      Cancelar
+                    </button>
+                    <button type="button" class="btn">Cadastrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- final do modal -->
           <!-- final do botao de adicionar -->
         </div>
@@ -237,160 +355,13 @@
               />
             </div>
             <div class="card-body">
-              <h5 class="card-title">Nome do usuario</h5>
               <div class="group d-flex justify-content-between">
-                <p class="card-text">funções</p>
-                <a href="#" class="btn">
+                <h5 class="card-title">Nome</h5>
+                <a href="#">
                   <img src="./assets/main/Editar.svg" alt="" />
                 </a>
               </div>
-            </div>
-          </div>
-
-          <div class="card" style="width: 12rem; height: 15rem">
-            <div
-              class="user-image d-flex align-items-center justify-content-center"
-            >
-              <img
-                src="./assets/main/Imagem.svg"
-                class="d-block mx-auto img-fluid"
-                alt="..."
-              />
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Nome do usuario</h5>
-              <div class="group d-flex justify-content-between">
-                <p class="card-text">funções</p>
-                <a href="#" class="btn">
-                  <img src="./assets/main/Editar.svg" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card" style="width: 12rem; height: 15rem">
-            <div
-              class="user-image d-flex align-items-center justify-content-center"
-            >
-              <img
-                src="./assets/main/Imagem.svg"
-                class="d-block mx-auto img-fluid"
-                alt="..."
-              />
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Nome do usuario</h5>
-              <div class="group d-flex justify-content-between">
-                <p class="card-text">funções</p>
-                <a href="#" class="btn">
-                  <img src="./assets/main/Editar.svg" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card" style="width: 12rem; height: 15rem">
-            <div
-              class="user-image d-flex align-items-center justify-content-center"
-            >
-              <img
-                src="./assets/main/Imagem.svg"
-                class="d-block mx-auto img-fluid"
-                alt="..."
-              />
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Nome do usuario</h5>
-              <div class="group d-flex justify-content-between">
-                <p class="card-text">funções</p>
-                <a href="#" class="btn">
-                  <img src="./assets/main/Editar.svg" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card" style="width: 12rem; height: 15rem">
-            <div
-              class="user-image d-flex align-items-center justify-content-center"
-            >
-              <img
-                src="./assets/main/Imagem.svg"
-                class="d-block mx-auto img-fluid"
-                alt="..."
-              />
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Nome do usuario</h5>
-              <div class="group d-flex justify-content-between">
-                <p class="card-text">funções</p>
-                <a href="#" class="btn">
-                  <img src="./assets/main/Editar.svg" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card" style="width: 12rem; height: 15rem">
-            <div
-              class="user-image d-flex align-items-center justify-content-center"
-            >
-              <img
-                src="./assets/main/Imagem.svg"
-                class="d-block mx-auto img-fluid"
-                alt="..."
-              />
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Nome do usuario</h5>
-              <div class="group d-flex justify-content-between">
-                <p class="card-text">funções</p>
-                <a href="#" class="btn">
-                  <img src="./assets/main/Editar.svg" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card" style="width: 12rem; height: 15rem">
-            <div
-              class="user-image d-flex align-items-center justify-content-center"
-            >
-              <img
-                src="./assets/main/Imagem.svg"
-                class="d-block mx-auto img-fluid"
-                alt="..."
-              />
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Nome do usuario</h5>
-              <div class="group d-flex justify-content-between">
-                <p class="card-text">funções</p>
-                <a href="#" class="btn">
-                  <img src="./assets/main/Editar.svg" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card" style="width: 12rem; height: 15rem">
-            <div
-              class="user-image d-flex align-items-center justify-content-center"
-            >
-              <img
-                src="./assets/main/Imagem.svg"
-                class="d-block mx-auto img-fluid"
-                alt="..."
-              />
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Nome do usuario</h5>
-              <div class="group d-flex justify-content-between">
-                <p class="card-text">funções</p>
-                <a href="#" class="btn">
-                  <img src="./assets/main/Editar.svg" alt="" />
-                </a>
-              </div>
+              <p class="card-text">funções</p>
             </div>
           </div>
         </div>
@@ -457,6 +428,10 @@
   margin-top: 0;
 }
 
+.notify {
+  transform: translateX(-10rem);
+}
+
 /* SIDEBAR */
 #sidebar {
   background-color: #39a048;
@@ -480,7 +455,7 @@
 }
 
 #sidebar-content {
-  padding-top: 5rem;
+  margin-top: 5rem;
 }
 
 #side_items {
@@ -700,6 +675,11 @@ main {
   height: 40vh;
 }
 
+.card-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .card-img-top img {
   height: 1rem;
 }
@@ -708,4 +688,223 @@ main {
   margin-top: 0.5rem;
   padding: 0.5rem;
 }
+
+.group img {
+  width: 0.8rem;
+}
+
+.card-text {
+  color: #9f9f9f;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* MODAL */
+.modal-content {
+  border: 1.5px solid #9f9f9f;
+  padding: 0.8rem;
+}
+
+.modal-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.modal-content {
+  margin: 0.5rem;
+  gap: 1.5rem;
+}
+
+.picture {
+  aspect-ratio: 16/9;
+  border: 1.7px solid #9f9f9f;
+  border-radius: 0.5rem;
+  color: #9f9f9f;
+  cursor: pointer;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: 500;
+  max-height: 25vh;
+  min-width: 67vh;
+  line-height: 1.2rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.picture img {
+  margin-bottom: 1.5rem;
+}
+
+.picture:hover {
+  background-color: #eaeaea;
+  color: black;
+}
+
+.picture:hover img {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(2000%)
+    hue-rotate(90deg) brightness(90%);
+}
+.inputs {
+  flex-wrap: wrap;
+}
+
+.inputs input {
+  width: 100%;
+}
+
+.inserir {
+  height: 10%;
+  position: relative;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.inserir input {
+  height: 100%;
+  background: transparent;
+  border-radius: 8px;
+  border: 1.7px solid #9f9f9f;
+  outline: none;
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #afafaf;
+  padding-left: 15px;
+}
+
+.inserir input:active,
+.inserir input:focus {
+  border-color: #1bba47;
+}
+
+.inserir label {
+  position: absolute;
+  top: -8px;
+  left: 15px;
+  text-transform: capitalize;
+  font-size: 12px;
+  background-color: #fff;
+  color: #9f9f9f;
+  padding: 0 5px;
+  font-weight: 600;
+}
+
+.inserir input:focus + .label,
+.inserir input:active + .label {
+  color: #1bba47;
+}
+
+.novoVinculo-add {
+  border: 3px dotted #9f9f9f;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 1rem;
+  text-align: center;
+  font-size: 14px;
+}
+
+.novoVinculo-add:hover {
+  background-color: #39a04820;
+}
 </style>
+
+<!-- .inputs {
+  flex-wrap: wrap;
+}
+
+.inputs input {
+  width: 100%;
+}
+
+.inserir {
+  height: 10%;
+  position: relative;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.inserir input {
+  height: 100%;
+  background: transparent;
+  border-radius: 8px;
+  border: 1.7px solid #9f9f9f;
+  outline: none;
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #afafaf;
+  padding-left: 15px;
+}
+
+.inserir input:active,
+.inserir input:focus {
+  border-color: #1bba47;
+}
+
+.inserir label {
+  position: absolute;
+  top: -8px;
+  left: 15px;
+  text-transform: capitalize;
+  font-size: 12px;
+  background-color: #fff;
+  color: #9f9f9f;
+  padding: 0 5px;
+  font-weight: 600;
+}
+
+.inserir input:focus + .label,
+.inserir input:active + .label {
+  color: #1bba47;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+}
+
+.botoes button {
+  background-color: transparent;
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 5px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botoes img {
+  margin-left: 5px;
+  height: 18px;
+  width: 18px;
+  vertical-align: middle;
+}
+
+.icones img {
+  position: absolute;
+  right: 0;
+  width: 15px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.close {
+  border: 1.7px solid black;
+}
+
+.concluir {
+  border: 1.7px solid #1bba47;
+  color: #1bba47;
+  font-weight: 600;
+}
+
+.concluir img {
+  filter: brightness(0) saturate(100%) invert(40%) sepia(100%) saturate(2000%) hue-rotate(90deg) brightness(90%);
+} -->
