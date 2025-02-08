@@ -1,62 +1,90 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
   <div>
-    <!-- NAVBAR --> 
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg border-bottom">
       <div class="container-fluid">
-
         <!-- avatar -->
-        <div class="container avatar rounded w-auto ">
+        <div class="container avatar rounded w-auto">
           <div class="row d-flex align-items-center justify-content-center">
             <div class="image col-6">
-              <img id="userAvatar" src="./assets/navbar/ImagemPerfilFoto.svg" alt="">
-            </div>            
+              <img
+                id="userAvatar"
+                src="./assets/navbar/ImagemPerfilFoto.svg"
+                alt=""
+              />
+            </div>
 
             <!-- avatar-dropdown -->
-            <div class="info dropdown text-nowrap col-6">                            
+            <div class="info dropdown text-nowrap col-6">
               <p class="name fw-bold">Administrador</p>
-              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 professor, dape
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">
-                  <!-- modal professor -->
-                </a></li>
-                <li><a class="dropdown-item" href="#">
-                  <!-- modal dape -->
-                </a></li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <!-- modal professor -->
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <!-- modal dape -->
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
-        </div>   
-        
+        </div>
+
         <!-- menu -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <img src="./assets/navbar/Property 1=Sun.svg" alt="">
+                <img src="./assets/navbar/Property 1=Sun.svg" alt="" />
               </a>
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="./assets/navbar/Notificacao-Off.svg" alt="">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="./assets/navbar/Notificacao-Off.svg" alt="" />
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item border-bottom" href="#">Novo evento gerado.</a></li>
-                <li><a class="dropdown-item border-bottom" href="#">O evento IFRO Party foi agendado.</a></li>
-                <li><a class="dropdown-item" href="#">Novo calendário cadastrado.</a></li>
+                <li>
+                  <a class="dropdown-item border-bottom" href="#"
+                    >Novo evento gerado.</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item border-bottom" href="#"
+                    >O evento IFRO Party foi agendado.</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Novo calendário cadastrado.</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <img src="./assets/navbar/sisgha-logo.svg" alt="">
+                <img src="./assets/navbar/sisgha-logo.svg" alt="" />
               </a>
-            </li>        
+            </li>
           </ul>
         </div>
       </div>
@@ -64,43 +92,85 @@
 
     <!-- SIDEBAR -->
     <nav id="sidebar">
-    <div id="sidebar-content">
-      <ul id="side_items">
-        <li class="side-item">
-          <a href="#">
-            <!-- <img class="icone" src="/assets/sidebar/Home.svg" alt="Inicio"> -->
-            <span class="item-description">Início</span>
-          </a>
-        </li>
-        <li class="side-item">
-          <a href="#">
-            <!-- <img class="icone" src="/assets/sidebar/Usuario.svg" alt="usuario"> -->
-            <span class="item-description">Perfil</span>
-          </a>
-        </li>
-        <li class="side-item">
-          <a href="#">
-            <!-- <img class="icone" src="/assets/sidebar/Calendario.svg" alt="calendario"> -->
-            <span class="item-description">Calendário</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="bottom">
-      <div id="configuracoes" class="side-item">
-        <a href="#">
-          <!-- <img class="icone" src="/assets/sidebar/Configurações.svg" alt="configuracoes"> -->
-          <span class="item-description">Configurações</span>
-        </a>
+      <div id="sidebar-content">
+        <ul id="side_items">
+          <li class="side-item">
+            <a href="#">
+              <img class="icone" src="./assets/sidebar/Home.svg" alt="Inicio" />
+              <span class="item-description">Início</span>
+            </a>
+          </li>
+          <li class="side-item">
+            <a href="#">
+              <img
+                class="icone"
+                src="./assets/sidebar/Usuarios.svg"
+                alt="usuario"
+              />
+              <span class="item-description">Turmas</span>
+            </a>
+          </li>
+          <li class="side-item">
+            <a href="#">
+              <img
+                class="icone"
+                src="./assets/sidebar/Disciplina.svg"
+                alt="discplinas"
+              />
+              <span class="item-description">Disciplinas</span>
+            </a>
+          </li>
+          <li class="side-item">
+            <a href="#">
+              <img
+                class="icone"
+                src="./assets/sidebar/Diario.svg"
+                alt="calendario"
+              />
+              <span class="item-description">Diário</span>
+            </a>
+          </li>
+          <li class="side-item">
+            <a href="#">
+              <img
+                class="icone"
+                src="./assets/sidebar/Calendario.svg"
+                alt="calendario"
+              />
+              <span class="item-description">Calendário</span>
+            </a>
+          </li>
+          <li class="side-item">
+            <a href="#">
+              <img
+                class="icone"
+                src="./assets/sidebar/Outros-Itens.svg"
+                alt="calendario"
+              />
+              <span class="item-description">Outros</span>
+            </a>
+          </li>
+        </ul>
       </div>
-      <div id="logout">
-        <button id="logout-btn">
-          <!-- <img class="icone" src="/assets/sidebar/Sair.svg" alt="sair"> -->
-          <span class="item-description">Sair</span>
-        </button>
+      <div class="sidebar-content__bottom">
+        <div id="configuracoes" class="side-item">
+          <a href="#">
+            <img
+              class="icone"
+              src="./assets/sidebar/Configuracoes.svg"
+              alt="configuracoes"
+            />
+            <span class="item-description">Configurações</span>
+          </a>
+        </div>
+        <div id="logout">
+          <button id="logout-btn">
+            <img class="icone" src="./assets/sidebar/Sair.svg" alt="sair" />
+            <span class="item-description">Sair</span>
+          </button>
+        </div>
       </div>
-    </div>
-  </nav>  
+    </nav>
 
     <!-- CONTENT -->
 
@@ -109,86 +179,84 @@
 </template>
 
 <style scoped>
-*{
-  font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
 }
 /* NAVBAR */
-.navbar{
-  background-color: transparent;
+.navbar {
+  background-color: #fff;
+  z-index: 100;
 }
 
-.container-fluid{
+.container-fluid {
   display: flex;
 }
 
-.avatar{
-  background-color: #2F9E411A;
+.avatar {
+  background-color: #2f9e411a;
   padding-left: 0;
 }
 
-.row{
-  padding: .2rem 1rem .2rem 0;
+.row {
+  padding: 0.2rem 1rem 0.2rem 0;
 }
 
-.image{
+.image {
   align-items: center;
-  background-color: #9F9F9F33; 
-  border-radius: 50%;  
-  display: flex ;
+  background-color: #9f9f9f33;
+  border-radius: 50%;
+  display: flex;
   justify-content: center;
   height: 3rem;
   width: 3rem;
 }
 
-.image img{
+.image img {
   height: 1rem;
 }
 
-.info{
+.info {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 0 0 .5rem;
+  margin: 0 0 0 0.5rem;
 }
 
-.name{
+.name {
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.dropdown-toggle{
+.dropdown-toggle {
   font-size: 12px;
   margin-top: 0;
 }
 
 /* SIDEBAR */
 #sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
+  background-color: #39a048;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 5.7rem;
-  height: 100vh;
-  background-color: #39a048;
-  padding: 1.5rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
-  line-height: 1.95rem;
-  transition: width 0.5s;
-  min-width: 8.2rem;
+  height: 100vh;
+  justify-content: space-between;
+  left: 0;
+  min-width: 5rem;
   overflow: hidden;
-  z-index: 1;
+  position: fixed;
+  top: 0rem;
+  transition: width 0.5s;
+  width: 2rem;
 }
 
 #sidebar:hover {
-  width: 25.7rem;
+  width: 12rem;
 }
 
 #sidebar-content {
-  padding-top: 7rem;
+  padding-top: 5rem;
 }
 
 #side_items {
@@ -196,19 +264,21 @@
   flex-direction: column;
   flex-grow: 1;
   list-style: none;
+  margin: 0.5rem;
+  padding: 0;
 }
 
 .side-item {
-  padding: 0;
-  cursor: pointer;
-  border-radius: 1rem;
-  transition: background-color 0.3s, transform 0.3s;
-  display: flex;
   align-items: center;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  height: 3rem;
   justify-content: center;
-  width: 23.7rem;
-  height: 4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
+  transition: background-color 0.3s, transform 0.3s;
+  width: auto;
 }
 
 .side-item:hover {
@@ -216,13 +286,13 @@
 }
 
 .side-item a {
-  text-decoration: none;
-  display: flex;
   align-items: center;
-  color: #fff;
-  height: 100%;
-  padding: 0 1rem;
   border-radius: 2rem;
+  color: #fff;
+  display: flex;
+  height: 100%;
+  padding: 1rem;
+  text-decoration: none;
   width: 100%;
 }
 
@@ -232,8 +302,8 @@
 
 .item-description {
   opacity: 0;
-  visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s, color 0.3s;
+  visibility: hidden;
 }
 
 #sidebar:hover .item-description {
@@ -245,31 +315,37 @@
   transform: translateX(20rem);
 }
 
+.sidebar-content__bottom {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  bottom: 10rem;
+}
+
 #logout {
-  border-top: .1rem solid #39a048;
+  border-top: 0.1rem solid #39a048;
 }
 
 #logout-btn {
-  font-size: 1.3rem;
-  font-weight: 600;
-  line-height: 1.95rem;
-  border: none;
-  display: flex;
-  gap: 1rem;
   align-items: center;
-  border-radius: 1rem;
-  text-align: start;
-  cursor: pointer;
   background-color: transparent;
+  border: none;
+  border-radius: 1rem;
   color: #fff;
-  padding: 0;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  gap: 1rem;
+  height: 100%;
+  line-height: 1.5rem;
+  padding: 1rem 1rem 1rem 0;
+  text-align: start;
   transition: background-color 0.3s, transform 0.3s;
-  width: 23.7rem;
-  height: 4rem;
+  width: 100%;
 }
 
 #logout-btn img {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 #logout-btn:hover {
