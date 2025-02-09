@@ -240,7 +240,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <h1 class="modal-title" id="cadastrar-usuario__label">
-                      Cadastrar Usuarios
+                      Cadastrar Usuário
                     </h1>
                     <button
                       type="button"
@@ -328,11 +328,45 @@
 
                     <!-- inputs de form final -->
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn" data-bs-dismiss="modal">
+                  <div class="modal-footer d-flex justify-content-between">
+                    <button
+                      type="button"
+                      class="btn btn-cancel"
+                      data-bs-dismiss="modal"
+                    >
                       Cancelar
+                      <span class="w-3 opacity-85">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          fill="currentColor"
+                          class="bi bi-x-lg"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                          />
+                        </svg>
+                      </span>
                     </button>
-                    <button type="button" class="btn">Cadastrar</button>
+                    <button type="button" class="btn btn-cadastrar">
+                      Cadastrar
+                      <span class="w-3 opacity-85"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          fill="currentColor"
+                          class="bi bi-check-lg"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"
+                          />
+                        </svg>
+                      </span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -724,14 +758,21 @@ main {
 }
 
 /* MODAL */
+
 .modal-content {
   border: 1.5px solid #9f9f9f;
   padding: 0.8rem;
 }
 
 .modal-title {
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 600;
+}
+
+.modal-title::before {
+  content: "";
+  border: 1.6px solid #1bba47;
+  margin-right: 0.5rem;
 }
 
 .modal-content {
@@ -831,6 +872,30 @@ main {
 
 .novoVinculo-add:hover {
   background-color: #39a04820;
+}
+
+.modal-footer .btn-cancel,
+.modal-footer .btn-cadastrar {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.modal-footer .btn-cancel {
+  border: 1.5px solid #9f9f9f;
+  color: #9f9f9f;
+}
+
+.modal-footer .btn-cancel:hover {
+  background-color: #9f9f9f20;
+}
+
+.modal-footer .btn-cadastrar {
+  border: 1.5px solid #1bba47;
+  color: #1bba47;
+}
+
+.modal-footer .btn-cadastrar:hover {
+  background-color: #1bba4720;
 }
 
 /* FOOTER */
