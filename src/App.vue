@@ -27,17 +27,50 @@
               >
                 professor, dape
               </button>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <!-- modal professor -->
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <!-- modal dape -->
-                  </a>
-                </li>
+              <ul class="dropdown-menu version">
+                <p class="version-text">Alternar cargo</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <li>
+                    <button class="dropdown-item item item-professor" href="#">
+                      <!-- button professor -->
+                      <span
+                        ><img
+                          src="./assets/main/Professor-Dark.svg"
+                          alt="ícone professor"
+                      /></span>
+                      <p>Professor</p>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item item item-dape" href="#">
+                      <!-- button dape -->
+                      <span
+                        ><img
+                          src="./assets/main/Dape-Light.svg"
+                          alt="ícone professor"
+                      /></span>
+                      <p>DAPE</p>
+                    </button>
+                  </li>
+                </div>
+
+                <button type="button" class="btn btn-cancel version-cancel">
+                  Cancelar
+                  <span class="w-3 opacity-85">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                      fill="currentColor"
+                      class="bi bi-x-lg"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                      />
+                    </svg>
+                  </span>
+                </button>
               </ul>
             </div>
           </div>
@@ -480,6 +513,45 @@
 .dropdown-toggle {
   font-size: 12px;
   margin-top: 0;
+}
+
+.version {
+  padding: 1rem;
+  text-align: center;
+  width: 16rem;
+}
+
+.version-text,
+.version-cancel {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.item {
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.item p {
+  margin: 0.5rem 0 0 0;
+  padding: 0.4rem;
+}
+
+.item-professor {
+  border: 1.68px solid #9f9f9f80;
+}
+
+.item-dape {
+  background-color: #2f9e41;
+  border: 1.68px solid #2f9e41;
+  color: #fff;
+  padding: 1.36rem 1.6rem;
+}
+
+.version-cancel {
+  margin-top: 0.5rem;
 }
 
 .notify {
