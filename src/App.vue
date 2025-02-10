@@ -339,27 +339,39 @@
                         <label for="input-name" class="label">Matricula</label>
                       </div>
                     </div>
+                    <div class="inputs-vinculo d-flex justify-content-between">
+                      <div class="form-floating">
+                        <select
+                          class="form-select"
+                          id="floatingSelect"
+                          aria-label="Floating label select example"
+                        >
+                          <option selected>Selecione um campus</option>
+                          <option value="1">Ji-Paraná</option>
+                          <option value="2">Porto Velho</option>
+                          <option value="3">Ariquemes</option>
+                        </select>
+                        <label for="floatingSelect">Campus</label>
+                      </div>
+
+                      <div class="form-floating">
+                        <select
+                          class="form-select checkbox"
+                          id="floatingSelect"
+                          aria-label="Floating label select example"
+                        >
+                          <option selected>Selecione</option>
+                          <option value="1">Professor</option>
+                          <option value="2">DAPE</option>
+                        </select>
+                        <label for="floatingSelect">Função</label>
+                      </div>
+                    </div>
+                    <br />
 
                     <div class="novoVinculo-add" onclick="addVinculo()">
                       <span>Novo Vínculo</span>
                     </div>
-
-                    <!-- 
-                    <div class="form-floating">
-                      <select
-                        class="form-select"
-                        id="floatingSelect"
-                        aria-label="Floating label select example"
-                      >
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                      <label for="floatingSelect">Works with selects</label>
-                    </div> -->
-
-                    <!-- inputs de form final -->
                   </div>
                   <div class="modal-footer d-flex justify-content-between">
                     <button
