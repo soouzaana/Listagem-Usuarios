@@ -683,7 +683,7 @@
   background-color: #39a048;
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 400;
   height: 100vh;
   justify-content: space-between;
@@ -1093,8 +1093,8 @@ footer {
   bottom: 0;
   font-size: 14px;
   height: 3rem;
+  margin-top: 2rem;
   padding: 1rem 5rem;
-  position: fixed;
   width: 100%;
   z-index: 1;
 }
