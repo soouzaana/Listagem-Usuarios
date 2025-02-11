@@ -3,7 +3,7 @@
 <template>
   <div>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg border-bottom">
+    <nav class="navbar navbar-expand-lg border-bottom position-fixed">
       <div class="container-fluid">
         <!-- avatar -->
         <div class="container avatar rounded w-auto">
@@ -584,6 +584,8 @@
 /* NAVBAR */
 .navbar {
   background-color: #fff;
+  top: 0;
+  width: 100%;
   z-index: 4;
 }
 
@@ -803,7 +805,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 7rem;
   transition: padding-left 0.5s;
 }
 
@@ -979,7 +981,7 @@ main {
   font-size: 1rem;
   font-weight: 500;
   max-height: 25vh;
-  max-width: 100%;
+  min-width: 100%;
   line-height: 1.2rem;
   margin-bottom: 1rem;
   padding: 2rem;
