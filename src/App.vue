@@ -442,6 +442,111 @@
               <p class="card-text">funções</p>
             </div>
           </div>
+
+          <div class="card" style="width: 12rem; height: 15rem">
+            <div
+              class="user-image d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="./assets/main/Imagem.svg"
+                class="d-block mx-auto img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <div class="group d-flex justify-content-between">
+                <h5 class="card-title">Nome</h5>
+                <a href="#">
+                  <img src="./assets/main/Editar.svg" alt="" />
+                </a>
+              </div>
+              <p class="card-text">funções</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 12rem; height: 15rem">
+            <div
+              class="user-image d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="./assets/main/Imagem.svg"
+                class="d-block mx-auto img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <div class="group d-flex justify-content-between">
+                <h5 class="card-title">Nome</h5>
+                <a href="#">
+                  <img src="./assets/main/Editar.svg" alt="" />
+                </a>
+              </div>
+              <p class="card-text">funções</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 12rem; height: 15rem">
+            <div
+              class="user-image d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="./assets/main/Imagem.svg"
+                class="d-block mx-auto img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <div class="group d-flex justify-content-between">
+                <h5 class="card-title">Nome</h5>
+                <a href="#">
+                  <img src="./assets/main/Editar.svg" alt="" />
+                </a>
+              </div>
+              <p class="card-text">funções</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 12rem; height: 15rem">
+            <div
+              class="user-image d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="./assets/main/Imagem.svg"
+                class="d-block mx-auto img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <div class="group d-flex justify-content-between">
+                <h5 class="card-title">Nome</h5>
+                <a href="#">
+                  <img src="./assets/main/Editar.svg" alt="" />
+                </a>
+              </div>
+              <p class="card-text">funções</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 12rem; height: 15rem">
+            <div
+              class="user-image d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="./assets/main/Imagem.svg"
+                class="d-block mx-auto img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <div class="group d-flex justify-content-between">
+                <h5 class="card-title">Nome</h5>
+                <a href="#">
+                  <img src="./assets/main/Editar.svg" alt="" />
+                </a>
+              </div>
+              <p class="card-text">funções</p>
+            </div>
+          </div>
         </div>
         <!-- cards de usuarios final -->
       </div>
@@ -874,7 +979,7 @@ main {
   font-size: 1rem;
   font-weight: 500;
   max-height: 25vh;
-  min-width: 67vh;
+  max-width: 100%;
   line-height: 1.2rem;
   margin-bottom: 1rem;
   padding: 2rem;
@@ -1003,102 +1108,3 @@ footer {
   text-decoration: none;
 }
 </style>
-
-<!-- .inputs {
-  flex-wrap: wrap;
-}
-
-.inputs input {
-  width: 100%;
-}
-
-.inserir {
-  height: 10%;
-  position: relative;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-
-.inserir input {
-  height: 100%;
-  background: transparent;
-  border-radius: 8px;
-  border: 1.7px solid #9f9f9f;
-  outline: none;
-  padding: 12px;
-  font-size: 12px;
-  font-weight: 600;
-  color: #afafaf;
-  padding-left: 15px;
-}
-
-.inserir input:active,
-.inserir input:focus {
-  border-color: #1bba47;
-}
-
-.inserir label {
-  position: absolute;
-  top: -8px;
-  left: 15px;
-  text-transform: capitalize;
-  font-size: 12px;
-  background-color: #fff;
-  color: #9f9f9f;
-  padding: 0 5px;
-  font-weight: 600;
-}
-
-.inserir input:focus + .label,
-.inserir input:active + .label {
-  color: #1bba47;
-}
-
-.botoes {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  width: 100%;
-}
-
-.botoes button {
-  background-color: transparent;
-  font-size: 14px;
-  border-radius: 8px;
-  padding: 5px 20px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.botoes img {
-  margin-left: 5px;
-  height: 18px;
-  width: 18px;
-  vertical-align: middle;
-}
-
-.icones img {
-  position: absolute;
-  right: 0;
-  width: 15px;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-}
-
-.close {
-  border: 1.7px solid black;
-}
-
-.concluir {
-  border: 1.7px solid #1bba47;
-  color: #1bba47;
-  font-weight: 600;
-}
-
-.concluir img {
-  filter: brightness(0) saturate(100%) invert(40%) sepia(100%) saturate(2000%) hue-rotate(90deg) brightness(90%);
-} -->
